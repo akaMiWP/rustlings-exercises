@@ -11,7 +11,13 @@
 // TODO: Write a function that calculates the price of an order of apples given
 // the quantity bought.
 // fn calculate_price_of_apples(???) -> ??? { ??? }
-
+fn calculate_price_of_apples(num: i8) -> i8 {
+    if num <= 40 {
+        num.checked_mul(2).expect("Not panic!")
+    } else {
+        num
+    }
+}
 fn main() {
     // You can optionally experiment here.
 }

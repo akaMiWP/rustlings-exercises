@@ -1,5 +1,5 @@
 # Use the official Rust image as the base
-FROM rust:latest
+FROM rust
 
 # Install dependencies (if needed, such as curl or additional tools)
 RUN apt-get update && apt-get install -y \
