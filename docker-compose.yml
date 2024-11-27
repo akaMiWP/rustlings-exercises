@@ -1,0 +1,9 @@
+services:
+  rustlings:
+    build:
+      context: .
+    volumes:
+      - .:/workdir # Mount your project directory into the container
+    working_dir: /workdir # Set the working directory inside the container
+    tty: true # Allocate a pseudo-TTY for interactive use
+    stdin_open: true # Keep the container running to allow interactive commands
