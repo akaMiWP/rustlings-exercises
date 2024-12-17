@@ -2,6 +2,8 @@ services:
   rustlings:
     build:
       context: .
+    image: rustlings:latest # Name and tag for your image
+    container_name: rustlings-container
     volumes:
       - .:/workdir # Mount your project directory into the container
     working_dir: /workdir # Set the working directory inside the container

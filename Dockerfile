@@ -12,7 +12,7 @@ WORKDIR /usr/src/app
 
 # Install Rustlings globally
 RUN cargo install rustlings
-RUN rustup component add clippy --toolchain 1.82.0-aarch64-unknown-linux-gnu
+RUN rustup component add clippy
 
 # Copy the Rustlings exercises folder into the container (if applicable)
 # Uncomment and modify the next line if you have Rustlings locally
